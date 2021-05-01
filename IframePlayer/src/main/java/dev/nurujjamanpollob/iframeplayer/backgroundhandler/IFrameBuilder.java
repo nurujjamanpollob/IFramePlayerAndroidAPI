@@ -32,8 +32,12 @@ public class IFrameBuilder {
 
         String startingIframe = "<iframe ", endIFrame = "></iframe>";
 
+
         // RUN a simple loop and get all entry
-        for(HashMap<String, String> map: IFrameDataToBuild) {
+        for(int i = 0; i < IFrameDataToBuild.size(); i++) {
+
+            HashMap<String, String> map = IFrameDataToBuild.get(i);
+
             for(Map.Entry<String, String> mapEntry: map.entrySet()) {
 
                 String key = "";
@@ -41,7 +45,7 @@ public class IFrameBuilder {
                 if(mapEntry.getKey() != null){
 
                     if (mapEntry.getValue() != null){
-                        key = mapEntry.getKey()+"\"";
+                        key = mapEntry.getKey()+"=\"";
                         value = mapEntry.getValue()+"\"";
                     }else {
 
@@ -54,12 +58,28 @@ public class IFrameBuilder {
                 }
 
 
+                String properties ="";
 
-                String properties = " "+key + value+" ";
+                if (i >= IFrameDataToBuild.size() -1) {
+
+                    properties =  key +  value;
+
+
+                }else {
+
+                    properties = key + value + " ";
+                }
+
+
 
                 TMPIFrame = String.format("%s%s", TMPIFrame, properties);
 
+
+
             }
+
+
+        
         }
 
 
