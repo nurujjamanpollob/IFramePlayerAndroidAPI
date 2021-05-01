@@ -73,11 +73,55 @@ dependencies {
   NJPollobIframePlayer iframe = findViewById(R.id.iframe_player);
   DataHolder dataholder = new DataHolder();
   dataholder.includeIframe("<iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/nCgQDjiotG0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"true\"></iframe>");
-  iframe.loadIFrameByIFrameUtility( new NJPollobIFrameUtility(dataholder)..buildIFrame());
+  iframe.loadIFrameByIFrameUtility( new NJPollobIFrameUtility(dataholder).buildIFrame());
 
  </code>
 
 </pre>
+
+
+Anyway, You can direct using a key value pair to build Iframe programmatially. You are refer to this unit test class: <a href="https://github.com/nurujjamanpollob/IFramePlayerAndroidAPI/blob/master/IframePlayer/src/test/java/dev/nurujjamanpollob/iframeplayer/NJPollobIFrameUtilityTest.java"> NJPollobIFrameUtilityTest.Java</a> to understand and run test according to your needs, I will add more unit test when I have free times.
+
+<b> How to programmatically build IFrame? </b>
+
+<b style="color:red"> Note: You need to have latest commit synced with jitpack, the current release 1.0 doesn't have working Iframebuilder, so change dependancy to with this version: </b>
+
+<pre>
+<code> 
+	 dependencies {
+	        implementation 'com.github.nurujjamanpollob:IFramePlayerAndroidAPI:67daba00bb'
+	}
+	
+	
+</code>
+</pre>
+
+<br />
+
+Look at this implementation:
+
+<pre>
+<code>
+        NJPollobIFrameUtility utility = new NJPollobIFrameUtility();
+  
+  // keys in String[] Array
+        String[] keys = {"width", "height", "src", "title", "frameborder", "allow", "allowfullscreen"};
+
+ // values followed by keys in Array
+        String[] values = {"100%", "200", "https://www.youtube.com/embed/nCgQDjiotG0", "YouTube video player", "0", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", "true" };
+	
+ // Then load it like:
+	NJPollobIframePlayer iframe = findViewById(R.id.iframe_player);
+        iframe.loadIFrameByIFrameUtility( utility.buidIframeByKeyValue(keys, values));
+	
+	
+	
+</code>
+</pre>
+
+
+
+        
 
 <br />
 <br />
