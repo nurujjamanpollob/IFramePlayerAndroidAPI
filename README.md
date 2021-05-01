@@ -89,7 +89,8 @@ Anyway, You can direct using a key value pair to build Iframe programmatially. Y
 <pre>
 <code> 
 	 dependencies {
-	        implementation 'com.github.nurujjamanpollob:IFramePlayerAndroidAPI:67daba00bb'
+	            implementation 'com.github.nurujjamanpollob:IFramePlayerAndroidAPI:3a117d21f3
+	
 	}
 	
 	
