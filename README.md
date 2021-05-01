@@ -100,7 +100,7 @@ Look at this implementation:
 	
  // Then load it like:
 	NJPollobIframePlayer iframe = findViewById(R.id.iframe_player);
-        iframe.loadIFrameByIFrameUtility( utility.buidIframeByKeyValue(keys, values)
+        iframe.loadIFrameByIFrameUtility( utility.buidIframeByKeyValue(keys, values));
 	
 	
 	
