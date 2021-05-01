@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.customview:customview:1.0.0@aar">
     <CLASSES>
-      <root url="jar://D:/Gradle/caches/transforms-2/files-2.1/246a30e68f3bd2d82eae06ad6e189462/customview-1.0.0/jars/classes.jar!/" />
-      <root url="file://D:/Gradle/caches/transforms-2/files-2.1/246a30e68f3bd2d82eae06ad6e189462/customview-1.0.0/res" />
+      <root url="jar://D:/Gradle/caches/transforms-2/files-2.1/31b0e6c8eb70fb63c983b3ed75183eb3/customview-1.0.0/jars/classes.jar!/" />
+      <root url="file://D:/Gradle/caches/transforms-2/files-2.1/31b0e6c8eb70fb63c983b3ed75183eb3/customview-1.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

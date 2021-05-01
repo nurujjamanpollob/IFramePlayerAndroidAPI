@@ -14,9 +14,11 @@
  *    limitations under the License.
  */
 
+
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-group = 'com.github.nurujjamanpollob'
+apply plugin: 'com.vanniktech.maven.publish'
+
+
 
 android {
     compileSdkVersion 30

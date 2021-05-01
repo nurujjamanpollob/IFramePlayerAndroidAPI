@@ -16,8 +16,6 @@
 
 package dev.nurujjamanpollob.iframeplayer.backgroundhandler;
 
-import android.view.View;
-
 import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
@@ -40,6 +38,10 @@ public class NJPollobIFrameUtility {
 
     }
 
+    // Empty constructor is needed
+    public NJPollobIFrameUtility(){
+
+    }
 
     public String buidIframeByKeyValue(String[]keys, String[] values) throws IFrameBuildException {
 
