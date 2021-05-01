@@ -80,9 +80,12 @@ dependencies {
 </pre>
 
 
-Anyway, You can direct using a key value pair to build Iframe programmatially. You are refer to this unit test class: <a href="https://github.com/nurujjamanpollob/IFramePlayerAndroidAPI/blob/master/IframePlayer/src/test/java/dev/nurujjamanpollob/iframeplayer/NJPollobIFrameUtilityTest.java"> NJPollobIFrameUtilityTest.Java</a> to understand and run test according to your needs, I will add more unit test when I have free times.
+Anyway, You can direct using a key value pair to build Iframe programmatically. You can refer to this unit test class: <a href="https://github.com/nurujjamanpollob/IFramePlayerAndroidAPI/blob/master/IframePlayer/src/test/java/dev/nurujjamanpollob/iframeplayer/NJPollobIFrameUtilityTest.java"> NJPollobIFrameUtilityTest.Java</a> to understand and run test according to your needs, I will add more unit test when I have free times.
 
 <b> How to programmatically build IFrame? </b>
+
+<br />
+<br />
 
 <b style="color:red"> Note: You need to have latest commit synced with jitpack, the current release 1.0 doesn't have working Iframebuilder, so change dependancy to with this version: </b>
 
@@ -138,10 +141,32 @@ Look at this implementation:
 
 <b> Thanks :) </b>
 
+
+
+<h3>What will be added in future?</h3>
+
+<ul>
+	<li> Direct Youtube IFrame Build matching layout, by simply put video page URL like: <a href="https://www.youtube.com/watch/nCgQDjiotG0">https://www.youtube.com/watch/nCgQDjiotG0</a> </li>
+	<li> Facebook IFrame Building by simply put video page URL like youtube sample. </li>
+	<li> Vimeo Iframe builder by simply put video page URL </li>
+	<li> Direct Video iframed by simply put URL, then The Library generates necessary codes </li>
+	<li> More features. </li>
+	
+</ul>
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 <br />
 
-/*
+<pre>
+<code>
+
  * Copyright 2021 Nurujjaman Pollob.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
@@ -155,5 +180,6 @@ Look at this implementation:
  *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
- */
 
+</code>
+</pre>
