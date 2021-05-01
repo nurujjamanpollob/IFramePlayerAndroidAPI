@@ -84,6 +84,14 @@ Anyway, You can direct using a key value pair to build Iframe programmatially. Y
 
 <b> How to programmatically build IFrame? </b>
 
+<b style="color:red"> Note: You need to have latest commit synced with jitpack, the current release 1.0 doesn't have working Iframebuilder, so change dependancy to with this version: </b>
+
+<pre>
+<code> 
+	 dependencies {
+	        implementation 'com.github.nurujjamanpollob:IFramePlayerAndroidAPI:67daba00bb'
+	}
+
 <br />
 
 Look at this implementation:
@@ -106,6 +114,9 @@ Look at this implementation:
 	
 </code>
 </pre>
+
+
+
         
 
 <br />
