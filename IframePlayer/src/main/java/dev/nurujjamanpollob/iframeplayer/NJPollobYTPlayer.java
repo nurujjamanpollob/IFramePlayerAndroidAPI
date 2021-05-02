@@ -16,5 +16,54 @@
 
 package dev.nurujjamanpollob.iframeplayer;
 
-public class NJPollobYTPlayer {
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.RelativeLayout;
+
+public class NJPollobYTPlayer extends RelativeLayout {
+
+    // add Context field
+    Context context;
+
+
+    /* Add three constructor parameter matching super */
+
+    public NJPollobYTPlayer(Context context) {
+        super(context);
+
+        this.context = context;
+
+        init();
+    }
+
+    public NJPollobYTPlayer(Context cntx, AttributeSet set){
+
+        super(cntx, set);
+        this.context = cntx;
+
+        init();
+
+    }
+
+    public NJPollobYTPlayer(Context cntx, AttributeSet set, int defStyle){
+
+        super(cntx, set, defStyle);
+
+        this.context = cntx;
+
+        init();
+
+    }
+
+
+
+    // initiate views
+    private void init(){
+
+        // add field for WebView
+
+
+
+    }
+
 }
