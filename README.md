@@ -125,7 +125,7 @@ Look at this implementation:
       NJPollobIframePlayer iframe = findViewById(R.id.iframe_player);
       iframe.loadIFrameByIFrameUtility(utility.buildIFrame());
 
-  
+
 	
 </code>
 </pre>
