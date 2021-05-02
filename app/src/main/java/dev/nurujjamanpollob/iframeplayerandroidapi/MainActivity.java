@@ -70,5 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         wb.loadIFrameByIFrameUtility(utility1.buildIFrame());
 
+        System.out.println(utility1.buildIFrame());
+
     }
 }

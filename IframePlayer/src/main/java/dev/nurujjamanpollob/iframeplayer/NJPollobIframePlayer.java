@@ -105,7 +105,7 @@ public class NJPollobIframePlayer extends RelativeLayout {
 
                 if (eventListener != null) {
 
-                    eventListener.onSoftClicked(v);
+                    eventListener.onLongClicked(v);
                 }
                 return false;
             });

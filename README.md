@@ -102,19 +102,26 @@ Look at this implementation:
 
 <pre>
 <code>
-        NJPollobIFrameUtility utility = new NJPollobIFrameUtility();
+
+
+	  DataHolder dataholder = new DataHolder();
+
+      NJPollobIFrameUtility utility = new NJPollobIFrameUtility(dataholder);
   
   // keys in String[] Array
         String[] keys = {"width", "height", "src", "title", "frameborder", "allow", "allowfullscreen"};
 
  // values followed by keys in Array
         String[] values = {"100%", "200", "https://www.youtube.com/embed/nCgQDjiotG0", "YouTube video player", "0", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", "true" };
-	
- // Then load it like:
-	NJPollobIframePlayer iframe = findViewById(R.id.iframe_player);
-        iframe.loadIFrameByIFrameUtility( utility.buidIframeByKeyValue(keys, values));
-	
-	
+
+
+      dataholder.includeIframe(utility.buidIframeByKeyValue(keys, values));
+
+       // Then load it like:
+      NJPollobIframePlayer iframe = findViewById(R.id.iframe_player);
+      iframe.loadIFrameByIFrameUtility(utility.buildIFrame());
+
+  
 	
 </code>
 </pre>

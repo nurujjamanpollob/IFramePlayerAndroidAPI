@@ -31,7 +31,7 @@ public class NJPollobIFrameUtilityTest {
 
         NJPollobIFrameUtility utility = new NJPollobIFrameUtility();
         // Write expected result.
-        String expected = "<iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/nCgQDjiotG0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"true\"></iframe>";
+      String expected = "<iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/nCgQDjiotG0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"true\"></iframe>";
 
         String[] keys = {"width", "height", "src", "title", "frameborder", "allow", "allowfullscreen"};
         String[] values = {"100%", "200", "https://www.youtube.com/embed/nCgQDjiotG0", "YouTube video player", "0", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", "true" };
