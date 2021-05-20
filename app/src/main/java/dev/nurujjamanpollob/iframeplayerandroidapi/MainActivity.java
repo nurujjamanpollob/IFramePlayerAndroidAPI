@@ -16,17 +16,11 @@
 
 package dev.nurujjamanpollob.iframeplayerandroidapi;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.view.View;
-import android.webkit.WebView;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
-
 import dev.nurujjamanpollob.iframeplayer.NJPollobIframePlayer;
-import dev.nurujjamanpollob.iframeplayer.NJPollobYTPlayer;
 import dev.nurujjamanpollob.iframeplayer.backgroundhandler.DataHolder;
 import dev.nurujjamanpollob.iframeplayer.backgroundhandler.NJPollobIFrameUtility;
 
@@ -37,46 +31,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        NJPollobYTPlayer wb = findViewById(R.id.wbvw);
 
-        EditText ed = findViewById(R.id.iframe_edittext);
-        Button bt = findViewById(R.id.ifrane_button);
-
+        // Initialize IFrame Player
+        NJPollobIframePlayer iframePlayer = findViewById(R.id.iframe_player);
 
 
+        // Create data for Player
 
-        bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(ed.getText().toString().equals("")){
-
-                    Toast.makeText(MainActivity.this, "Please provide input", Toast.LENGTH_LONG).show();
-                }else {
-
-                    // create data for Utility class
-                    DataHolder dt = new DataHolder();
-                    dt.includeIframe(ed.getText().toString());
-
-                    // create a new instance of Utility class
-                    // and load IFrame
-                //    wb.loadIFrameByIFrameUtility(new NJPollobIFrameUtility(dt).buildIFrame());
-                    
-
-                }
-            }
-        });
-   //     DataHolder utility = new DataHolder();
-    //    utility.includeIframe("<iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/nCgQDjiotG0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"true\"></iframe>");
+        DataHolder utility = new DataHolder();
+        utility.includeIframe("<iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/watch?v=9No-FiEInLA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"true\"></iframe>");
 
 
-     //   NJPollobIFrameUtility utility1 = new NJPollobIFrameUtility(utility);
+        NJPollobIFrameUtility utility1 = new NJPollobIFrameUtility(utility);
 
-     //   wb.loadIFrameByIFrameUtility(utility1.buildIFrame());
+        // Pass the data to player
+        iframePlayer.loadIFrameByIFrameUtility(utility1.buildIFrame());
 
-      //  System.out.println(utility1.buildIFrame());
-
-      //  wb.putYouTubeVideoToken("nCgQDjiotG0");
-        //System.out.println(" Token: nCgQDjiotG0");
 
     }
 }

@@ -20,26 +20,14 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.ContextWrapper;
-import android.content.pm.ActivityInfo;
-import android.content.res.Configuration;
 import android.os.Build;
-import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebChromeClient;
-import android.webkit.WebResourceError;
-import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
-
-import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 
 import dev.nurujjamanpollob.iframeplayer.backgroundhandler.NJPollobIFrameUtility;
 
@@ -49,10 +37,6 @@ public class NJPollobIframePlayer extends RelativeLayout {
     View view;
     Context context;
 
-    private View mCustomView;
-    private int mOriginalSystemUiVisibility;
-    private int mOriginalOrientation;
-    private WebChromeClient.CustomViewCallback mCustomViewCallback;
     private OnEventPerformed eventListener;
 
 
@@ -89,10 +73,29 @@ public class NJPollobIframePlayer extends RelativeLayout {
     private void init() {
 
 
+        /*
             // Creating an instance for View Object
             LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.iframe_player_layout, this, true);
             webview = view.findViewById(R.id.iframe_player_webview);
+
+         */
+
+
+        // Creating an instance for View Object
+        LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        // Create a new instance of WebView
+        webview = new WebView(context);
+        webview.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+
+        // Attach webview to Layout View(Layout extends ViewGroup)
+        addView(webview);
+
+
+
+        // Inflate view
+        view = inflater.inflate(R.layout.empty_layout, this, true);
 
             webview.setOnClickListener(v -> {
                 if (eventListener != null) {

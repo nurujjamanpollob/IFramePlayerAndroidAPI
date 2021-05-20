@@ -20,9 +20,11 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.pm.ActivityInfo;
+import android.os.Message;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
+import android.webkit.WebView;
 import android.widget.FrameLayout;
 
 public class NJPollobWebChromeClient extends WebChromeClient {
@@ -105,9 +107,10 @@ public class NJPollobWebChromeClient extends WebChromeClient {
         super.onHideCustomView();
     }
 
-
-
-
+    @Override
+    public boolean onCreateWindow(WebView view, boolean isDialog, boolean isUserGesture, Message resultMsg) {
+        return super.onCreateWindow(view, isDialog, isUserGesture, resultMsg);
+    }
 
     /**
      * Get activity instance from desired context.

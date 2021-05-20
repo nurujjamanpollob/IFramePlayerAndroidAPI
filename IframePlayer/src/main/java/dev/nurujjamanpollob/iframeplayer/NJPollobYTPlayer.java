@@ -23,6 +23,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.RelativeLayout;
@@ -34,19 +35,16 @@ import dev.nurujjamanpollob.iframeplayer.backgroundhandler.NJPollobIFrameUtility
 public class NJPollobYTPlayer extends RelativeLayout {
 
     // add Context field
-    Context context;
+   private Context context;
 
     // add WebView Field
-    WebView webView;
+  private   WebView webView;
 
     // Add View Field
-    View view;
+   private View view;
 
-    // Video Token from Method
-    String videoToken = null;
-
-    // Video URL from Method
-    String ytVideoURL = null;
+    // Create field for click event listener
+    private  ListenOnClick onClickEvent;
 
 
 
@@ -122,7 +120,6 @@ public class NJPollobYTPlayer extends RelativeLayout {
                 youtubeVideoToken = token;
 
 
-                System.out.println("Token Received:" + token);
             }
 
             typedArray.recycle();
@@ -132,9 +129,18 @@ public class NJPollobYTPlayer extends RelativeLayout {
 
         // Creating an instance for View Object
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        view = inflater.inflate(R.layout.yt_iframe_player, this, true);
-        webView = view.findViewById(R.id.yt_iframe_main_view);
 
+        // Create a new instance of WebView
+        webView = new WebView(context);
+        webView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+
+        // Attach webview to Layout View(Layout extends ViewGroup)
+        addView(webView);
+
+
+
+        // Inflate view
+        view = inflater.inflate(R.layout.empty_layout, this, true);
 
 
         if (youtubeVideoURL != null && youtubeVideoToken == null){
@@ -151,23 +157,40 @@ public class NJPollobYTPlayer extends RelativeLayout {
                 // RUN Initializer
                 buildAndPlayIFrame("https://www.youtube.com/embed/" + youtubeVideoToken);
 
-                System.out.println("Token Received:" + youtubeVideoToken);
 
-            }else {
-
-                System.out.println("No Value Passed: token "+youtubeVideoToken+" URL: "+youtubeVideoURL);
             }
         }
 
 
 
           // Set webChromeClient
-          webView.setWebChromeClient(new NJPollobWebChromeClient(context));
+        webView.setWebChromeClient(new NJPollobWebChromeClient(context));
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             WebView.enableSlowWholeDocumentDraw();
         }
+
+        settings.setSupportMultipleWindows(true);
+
+
+
+        // Set Up single click Listener
+        webView.setOnClickListener(v -> {
+            if(onClickEvent != null){
+
+                onClickEvent.onClickView(v);
+            }
+        });
+
+        webView.setOnLongClickListener(v -> {
+            if(onClickEvent != null){
+
+                onClickEvent.onLongClick(v);
+            }
+
+            return true;
+        });
 
 
 
@@ -231,8 +254,6 @@ public class NJPollobYTPlayer extends RelativeLayout {
         dataHolder.includeIframe(iFrameUtility.buidIframeByKeyValue(keys,values));
 
         // load the Data
-
-        System.out.println(iFrameUtility.buildIFrame().toString());
         webView.loadData(iFrameUtility.buildIFrame().toString(), "text/html", "UTF8");
 
 
@@ -261,6 +282,44 @@ public class NJPollobYTPlayer extends RelativeLayout {
             e.printStackTrace();
         }
     }
+
+
+    // Return main view, for various purpose.
+
+    public View getView(){
+
+        return view;
+    }
+
+
+
+    // Get ViewGroup if needed.
+
+    public ViewGroup getViewGroup(){
+
+
+        return this;
+    }
+
+
+
+    // Create interface and provide Callback for single click event
+    public interface ListenOnClick{
+
+        void onClickView(View view);
+        void onLongClick(View view);
+
+    }
+
+
+
+    // Listener Assigner
+    public void setListenerForSingleClick(ListenOnClick clickEventListener){
+
+        this.onClickEvent = clickEventListener;
+    }
+
+
 
 
 }

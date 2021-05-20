@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
   ~  Copyright 2021 Nurujjaman Pollob.
   ~
@@ -14,10 +15,7 @@
   ~     limitations under the License.
   -->
 
-<resources>
-    <string name="app_name">IFramePlayerAndroidAPI</string>
-    <string name="test_iframe">Test IFrame</string>
-    <string name="youtube_video_with_pageurl_example">YouTube Video With PageURL Example</string>
-    <string name="youtube_video_with_token_example">YouTube Video With Token Example</string>
-    <string name="general_iframe_example">General IFrame Example</string>
-</resources>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+</RelativeLayout>

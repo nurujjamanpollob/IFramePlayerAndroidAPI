@@ -15,36 +15,74 @@
   ~     limitations under the License.
   -->
 
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="#353131"
+    tools:context=".MainActivity">
 
-    <dev.nurujjamanpollob.iframeplayer.NJPollobYTPlayer
-        android:id="@+id/wbvw"
+    <LinearLayout
         android:layout_width="match_parent"
-        app:youtube_video_url="https://www.youtube.com/watch?v=nCgQDjiotG0"
-        android:layout_height="250dp" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/youtube_video_with_pageurl_example"
+            android:textAlignment="center"
+            android:textColor="#C51162"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold" />
+
+        <dev.nurujjamanpollob.iframeplayer.NJPollobYTPlayer
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:youtube_video_url="https://www.youtube.com/watch?v=0eKVizvYSUQ" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/youtube_video_with_token_example"
+            android:textAlignment="center"
+            android:textColor="#C51162"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold" />
+
+        <dev.nurujjamanpollob.iframeplayer.NJPollobYTPlayer
+            android:layout_width="match_parent"
+            app:youtube_video_token="nCgQDjiotG0"
+            android:layout_height="250dp" />
 
 
 
-    <EditText
-        android:id="@+id/iframe_edittext"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center_vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/general_iframe_example"
+            android:textAlignment="center"
+            android:textColor="#C51162"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/ifrane_button"
-        android:layout_width="100dp"
-        android:gravity="center_vertical"
-        android:layout_height="40dp"
-        android:text="@string/test_iframe" />
+        <dev.nurujjamanpollob.iframeplayer.NJPollobIframePlayer
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/iframe_player" />
 
 
-</LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>
