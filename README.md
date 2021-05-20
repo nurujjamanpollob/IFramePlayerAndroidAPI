@@ -223,7 +223,7 @@ Applying animation, resizing ViewPort, access or re-render View is just simplifi
 <h3>What will be added in future?</h3>
 
 <ul>
-	<li> Direct Youtube IFrame Build matching layout, by simply put video page URL like: <a href="https://www.youtube.com/watch/nCgQDjiotG0">https://www.youtube.com/watch/nCgQDjiotG0</a> </li>
+	<li>Add PIP Support - Current Support featuring WebView Support, I went to make it native and cover lower SDK's</li> 
 	<li> Facebook IFrame Building by simply put video page URL like youtube sample. </li>
 	<li> Vimeo Iframe builder by simply put video page URL </li>
 	<li> Direct Video iframed by simply put URL, then The Library generates necessary codes </li>
