@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         NJPollobIframePlayer iframePlayer = findViewById(R.id.iframe_player);
 
 
+
         // Create data for Player
 
         DataHolder utility = new DataHolder();

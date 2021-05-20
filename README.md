@@ -39,7 +39,7 @@
 <code>
 
 dependencies {
-	        implementation 'com.github.nurujjmanpollob:IFramePlayerAndroidAPI:1.0'
+	        implementation 'com.github.nurujjmanpollob:IFramePlayerAndroidAPI:1.1'
 	}
 
 </code>
@@ -87,21 +87,6 @@ Anyway, You can direct using a key value pair to build Iframe programmatically. 
 <br />
 <br />
 
-<b style="color:red"> Note: You need to have latest commit synced with jitpack, the current release 1.0 doesn't have working Iframebuilder, so change dependancy to with this version: </b>
-
-<pre>
-<code> 
-	 dependencies {
-	            implementation 'com.github.nurujjamanpollob:IFramePlayerAndroidAPI:3a117d21f3
-	
-	}
-	
-	
-</code>
-</pre>
-
-<br />
-
 Look at this implementation:
 
 <pre>
@@ -136,6 +121,98 @@ Look at this implementation:
 
 <br />
 <br />
+
+
+
+<h2> Newly Added: <a href="https://github.com/nurujjamanpollob/IFramePlayerAndroidAPI/blob/1.1/IframePlayer/src/main/java/dev/nurujjamanpollob/iframeplayer/NJPollobYTPlayer.java"> NJPollobYTPlayer.Java </a></h2>
+
+
+<br/>
+
+<p> This class is straightforward, Enable you to play YouTube Video, by simply add video token or video page url in xml or in Java Code progrmmatically like this:
+
+
+<br />
+
+<h5> For XML, you can show a YouTube Video Like this: </h5>
+
+<br />
+
+<b> With Video Page URL </b>
+<pre>
+<code>
+   <dev.nurujjamanpollob.iframeplayer.NJPollobYTPlayer
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:youtube_video_url="https://www.youtube.com/watch?v=0eKVizvYSUQ" />
+</code>
+
+</pre>
+
+
+<br />
+
+<b> With Video Token </b>
+
+<br />
+
+<pre>
+
+<code>
+
+        <dev.nurujjamanpollob.iframeplayer.NJPollobYTPlayer
+            android:layout_width="match_parent"
+            app:youtube_video_token="nCgQDjiotG0"
+            android:layout_height="match_parent" />
+
+
+
+</code>
+
+</pre>
+
+
+<br />
+
+<br />
+
+<h5>You can also do this programmatically, put these values by calling:</h5>
+
+<pre>
+<code>
+NJPollobYTPlayer ytPlayer = findViewById(view id here);
+
+ytPlayer.putYouTubeVideoToken(Video token here);
+</code>
+
+</pre>
+
+<br />
+
+<b> Or </b>
+
+<pre> 
+
+<code>
+
+NJPollobYTPlayer ytPlayer = findViewById(view id here);
+ytPlayer.putYouTubeVideoURL(Video token here);
+
+
+
+</code>
+
+</pre>
+
+
+
+<br /> <br />
+
+This class  <a href="https://github.com/nurujjamanpollob/IFramePlayerAndroidAPI/blob/1.1/IframePlayer/src/main/java/dev/nurujjamanpollob/iframeplayer/NJPollobYTPlayer.java">NJPollobYTPlayer.Java </a> Offers support return it's main View and ViewGroup so you can Work with Views easily.
+
+
+Applying animation, resizing ViewPort, access or re-render View is just simplified. You can call #getView(); to get parent View and getViewGroup(); to get Created ViewGroup programmatically.
+
 
 <h5> Hey congratulation! You have successfully implemented IFramePlayerAndroidAPI in your project </h5>
 
