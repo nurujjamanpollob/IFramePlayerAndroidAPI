@@ -93,14 +93,14 @@ Look at this implementation:
 <code>
 
 
-	  DataHolder dataholder = new DataHolder();
+	DataHolder dataholder = new DataHolder();
 
-      NJPollobIFrameUtility utility = new NJPollobIFrameUtility(dataholder);
+        NJPollobIFrameUtility utility = new NJPollobIFrameUtility(dataholder);
   
-  // keys in String[] Array
+        // keys in String[] Array
         String[] keys = {"width", "height", "src", "title", "frameborder", "allow", "allowfullscreen"};
 
- // values followed by keys in Array
+        // values followed by keys in Array
         String[] values = {"100%", "200", "https://www.youtube.com/embed/nCgQDjiotG0", "YouTube video player", "0", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", "true" };
 
 
@@ -139,15 +139,14 @@ Look at this implementation:
 <br />
 
 <b> With Video Page URL </b>
-<pre>
-<code>
-   <dev.nurujjamanpollob.iframeplayer.NJPollobYTPlayer
+
+
+ 
+ 	<dev.nurujjamanpollob.iframeplayer.NJPollobYTPlayer
+   
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:youtube_video_url="https://www.youtube.com/watch?v=0eKVizvYSUQ" />
-</code>
-
-</pre>
 
 
 <br />
@@ -156,9 +155,6 @@ Look at this implementation:
 
 <br />
 
-<pre>
-
-<code>
 
         <dev.nurujjamanpollob.iframeplayer.NJPollobYTPlayer
             android:layout_width="match_parent"
@@ -167,9 +163,6 @@ Look at this implementation:
 
 
 
-</code>
-
-</pre>
 
 
 <br />
