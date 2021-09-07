@@ -212,7 +212,7 @@ Applying animation, resizing ViewPort, access or re-render View is just simplifi
 <br />
 
 
-<h6> Added New Module - DraggableView </h6>
+<h3> Added New Module - DraggableView </h3>
 
 I am soon gonna share documentation for this, it will be like PIP in Android OREO but covering Lower SDK.
 
@@ -230,7 +230,7 @@ I am having tight timeline, hope soon gonna do something with this.
 <h3>What will be added in future?</h3>
 
 <ul>
-	<li>Add PIP Support - Current Support featuring WebView Support, I went to make it native and cover lower SDK's</li> 
+	<li>PIP module Added - Need to implement in my spare time.</li>
 	<li> Facebook IFrame Building by simply put video page URL like youtube sample. </li>
 	<li> Vimeo Iframe builder by simply put video page URL </li>
 	<li> Direct Video iframed by simply put URL, then The Library generates necessary codes </li>
