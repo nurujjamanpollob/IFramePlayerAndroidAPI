@@ -211,6 +211,13 @@ Applying animation, resizing ViewPort, access or re-render View is just simplifi
 
 <br />
 
+
+<h6> Added New Module - DraggableView </h6>
+
+I am soon gonna share documentation for this, it will be like PIP in Android OREO but covering Lower SDK.
+
+I am having tight timeline, hope soon gonna do something with this.
+
 <h2> Feel to share bug, contribution is always welcome :) </h2>
 
 
