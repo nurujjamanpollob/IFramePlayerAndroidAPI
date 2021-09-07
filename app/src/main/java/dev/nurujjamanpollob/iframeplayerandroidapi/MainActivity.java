@@ -1,23 +1,25 @@
 /*
- *  Copyright 2021 Nurujjaman Pollob.
+ * Copyright (c) 2021. Nurujjaman Pollob, All Right Reserved. 
+ *      Licensed under the Apache License, Version 2.0 (the "License");
+ *      you may not use this file except in compliance with the License.
+ *      You may obtain a copy of the License at
  *
- *     Licensed under the Apache License, Version 2.0 (the "License");
- *     you may not use this file except in compliance with the License.
- *     You may obtain a copy of the License at
+ *          http://www.apache.org/licenses/LICENSE-2.0
  *
- *         http://www.apache.org/licenses/LICENSE-2.0
- *
- *     Unless required by applicable law or agreed to in writing, software
- *     distributed under the License is distributed on an "AS IS" BASIS,
- *     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *     See the License for the specific language governing permissions and
- *     limitations under the License.
+ *      Unless required by applicable law or agreed to in writing, software
+ *      distributed under the License is distributed on an "AS IS" BASIS,
+ *      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *      See the License for the specific language governing permissions and
+ *      limitations under the License.
  */
 
 package dev.nurujjamanpollob.iframeplayerandroidapi;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import dev.nurujjamanpollob.iframeplayer.NJPollobIframePlayer;
@@ -26,6 +28,8 @@ import dev.nurujjamanpollob.iframeplayer.backgroundhandler.NJPollobIFrameUtility
 
 public class MainActivity extends AppCompatActivity {
 
+    NJPollobIframePlayer iframePlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Initialize IFrame Player
-        NJPollobIframePlayer iframePlayer = findViewById(R.id.iframe_player);
+iframePlayer         = findViewById(R.id.iframe_player);
 
 
 
@@ -49,5 +53,12 @@ public class MainActivity extends AppCompatActivity {
         iframePlayer.loadIFrameByIFrameUtility(utility1.buildIFrame());
 
 
+    }
+
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void pipMe(View view) {
+
+        iframePlayer.convertToMiniWindow();
     }
 }

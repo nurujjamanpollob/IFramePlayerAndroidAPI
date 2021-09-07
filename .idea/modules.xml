@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IFramePlayerAndroidAPI.iml" filepath="$PROJECT_DIR$/.idea/modules/IFramePlayerAndroidAPI.iml" group="IFramePlayerAndroidAPI" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IframePlayer/IframePlayer.iml" filepath="$PROJECT_DIR$/.idea/modules/IframePlayer/IframePlayer.iml" group="IFramePlayerAndroidAPI/IframePlayer" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="IFramePlayerAndroidAPI/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IFramePlayerAndroidAPI.iml" filepath="$PROJECT_DIR$/.idea/modules/IFramePlayerAndroidAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IframePlayer/IFramePlayerAndroidAPI.IframePlayer.iml" filepath="$PROJECT_DIR$/.idea/modules/IframePlayer/IFramePlayerAndroidAPI.IframePlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/IFramePlayerAndroidAPI.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/IFramePlayerAndroidAPI.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/draggableview/IFramePlayerAndroidAPI.draggableview.iml" filepath="$PROJECT_DIR$/.idea/modules/draggableview/IFramePlayerAndroidAPI.draggableview.iml" />
     </modules>
   </component>
 </project>

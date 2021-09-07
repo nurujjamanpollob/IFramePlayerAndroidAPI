@@ -1,35 +1,44 @@
 /*
- *  Copyright 2021 Nurujjaman Pollob.
+ * Copyright (c) 2021. Nurujjaman Pollob, All Right Reserved. 
+ *      Licensed under the Apache License, Version 2.0 (the "License");
+ *      you may not use this file except in compliance with the License.
+ *      You may obtain a copy of the License at
  *
- *     Licensed under the Apache License, Version 2.0 (the "License");
- *     you may not use this file except in compliance with the License.
- *     You may obtain a copy of the License at
+ *          http://www.apache.org/licenses/LICENSE-2.0
  *
- *         http://www.apache.org/licenses/LICENSE-2.0
- *
- *     Unless required by applicable law or agreed to in writing, software
- *     distributed under the License is distributed on an "AS IS" BASIS,
- *     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *     See the License for the specific language governing permissions and
- *     limitations under the License.
+ *      Unless required by applicable law or agreed to in writing, software
+ *      distributed under the License is distributed on an "AS IS" BASIS,
+ *      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *      See the License for the specific language governing permissions and
+ *      limitations under the License.
  */
 
 package dev.nurujjamanpollob.iframeplayer;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.PictureInPictureParams;
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.graphics.Point;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.util.Rational;
+import android.view.Display;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
+
+import androidx.activity.OnBackPressedCallback;
+import androidx.annotation.RequiresApi;
 
 import dev.nurujjamanpollob.iframeplayer.backgroundhandler.NJPollobIFrameUtility;
+import dev.nurujjamanpollob.iframeplayer.utility.GeneralCode;
 
 public class NJPollobIframePlayer extends RelativeLayout {
 
@@ -126,7 +135,6 @@ public class NJPollobIframePlayer extends RelativeLayout {
 
 
 
-
     }
 
     public void loadIFrameByIFrameUtility(NJPollobIFrameUtility utilityObjectInstance){
@@ -138,15 +146,7 @@ public class NJPollobIframePlayer extends RelativeLayout {
     }
 
 
-    /**
-     * Get activity instance from desired context.
-     */
-    public static Activity getActivity(Context context) {
-        if (context == null) return null;
-        if (context instanceof Activity) return (Activity) context;
-        if (context instanceof ContextWrapper) return getActivity(((ContextWrapper)context).getBaseContext());
-        return null;
-    }
+
 
 
 
@@ -156,6 +156,28 @@ public class NJPollobIframePlayer extends RelativeLayout {
 
         void onSoftClicked(View view);
         void onLongClicked(View view);
+
+    }
+
+
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void convertToMiniWindow(){
+
+        Activity activity = GeneralCode.getActivity(context);
+
+        Display d = view.getDisplay();
+
+        Point p = new Point();
+        d.getSize(p);
+        int width = p.x;
+        int height = p.y;
+
+        Rational ratio = new Rational(800, 600);
+        PictureInPictureParams.Builder pip_Builder = new PictureInPictureParams.Builder();
+        pip_Builder.setAspectRatio(ratio).build();
+
+       activity.enterPictureInPictureMode(pip_Builder.build());
 
     }
 
