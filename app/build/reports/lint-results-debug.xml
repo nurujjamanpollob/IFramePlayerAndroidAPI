@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 7.0.0">
+
+    <issue
+        id="LintError"
+        severity="Error"
+        message="The lint detector&#xA;    `androidx.appcompat.view.OnClickXmlDetector`&#xA;called `context.getMainProject()` during module analysis.&#xA;&#xA;This does not work correctly when running in AGP (7.0.0).&#xA;&#xA;In particular, there may be false positives or false negatives because&#xA;the lint check may be using the minSdkVersion or manifest information&#xA;from the library instead of any consuming app module.&#xA;&#xA;Contact the vendor of the lint issue to get it fixed/updated (if&#xA;known, listed below), and in the meantime you can try to work around&#xA;this by disabling the following issues:&#xA;&#xA;&quot;UsingOnClickInXml&quot;&#xA;&#xA;Issue Vendors:&#xA;Vendor: Android Open Source Project (appcompat-1.3.1)&#xA;Identifier: appcompat-1.3.1&#xA;Feedback: https://issuetracker.google.com/issues/new?component=192731&#xA;&#xA;Call stack: Context.getMainProject(Context.kt:117)←OnClickXmlDetector.visitAttribute(OnClickXmlDetector.kt:51)←ResourceVisitor.visitElement(ResourceVisitor.java:161)←ResourceVisitor.visitElement(ResourceVisitor.java:177)←ResourceVisitor.visitElement(ResourceVisitor.java:177)←ResourceVisitor.visitFile(ResourceVisitor.java:125)←LintDriver$checkResourceFolder$1.run(LintDriver.kt:2219)←LintClient.runReadAction(LintClient.kt:1780)←LintDriver$LintClientWrapper.runReadAction(LintDriver.kt:2634)←LintDriver.checkResourceFolder(LintDriver.kt:2214)←LintDriver.checkResFolder(LintDriver.kt:2167)←LintDriver.runFileDetectors(LintDriver.kt:1362)←LintDriver.checkProject(LintDriver.kt:1151)←LintDriver.checkProjectRoot(LintDriver.kt:628)←LintDriver.access$checkProjectRoot(LintDriver.kt:153)←LintDriver$analyzeOnly$1.invoke(LintDriver.kt:442)←LintDriver$analyzeOnly$1.invoke(LintDriver.kt:435)←LintDriver.doAnalyze(LintDriver.kt:502)←LintDriver.analyzeOnly(LintDriver.kt:434)←LintCliClient$analyzeOnly$1.invoke(LintCliClient.kt:241)"
+        category="Lint"
+        priority="10"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include failure to find bytecode for source files (which means certain detectors could not be run), parsing errors in lint configuration files, etc.&#xA;&#xA;These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed.">
+        <location
+            file="E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\res\layout\activity_main.xml"/>
+    </issue>
+
+    <issue
+        id="ScopedStorage"
+        severity="Warning"
+        message="WRITE_EXTERNAL_STORAGE no longer provides write access when targeting Android 10+"
+        category="Correctness"
+        priority="8"
+        summary="Affected by scoped storage"
+        explanation="Scoped storage is enforced on Android 10+ (or Android 11+ if using `requestLegacyExternalStorage`). In particular, `WRITE_EXTERNAL_STORAGE` will no longer provide write access to all files; it will provide the equivalent of `READ_EXTERNAL_STORAGE` instead.&#xA;&#xA;The `MANAGE_EXTERNAL_STORAGE` permission can be used to manage all files, but it is rarely necessary and most apps on Google Play are not allowed to use it. Most apps should instead migrate to use scoped storage. To modify or delete files, apps should request write access from the user as described at https://goo.gle/android-mediastore-createwriterequest.&#xA;&#xA;To learn more, read these resources: Play policy: https://goo.gle/policy-storage-help Allowable use cases: https://goo.gle/policy-storage-usecases"
+        url="https://goo.gle/android-storage-usecases"
+        urls="https://goo.gle/android-storage-usecases"
+        errorLine1="    &lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; />"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml"
+            line="22"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="OldTargetApi"
+        severity="Warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details."
+        category="Correctness"
+        priority="6"
+        summary="Target SDK attribute is not targeting latest version"
+        explanation="When your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.&#xA;&#xA;To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: https://developer.android.com/reference/android/os/Build.VERSION_CODES.html as well as follow this guide:&#xA;https://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+        url="https://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+        urls="https://developer.android.com/distribute/best-practices/develop/target-sdk.html,https://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        errorLine1="        targetSdkVersion 30"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\build.gradle"
+            line="26"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.2.0 is available: 1.3.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &apos;androidx.appcompat:appcompat:1.2.0&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\build.gradle"
+            line="49"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.0.4 is available: 2.1.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &apos;androidx.constraintlayout:constraintlayout:2.0.4&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\build.gradle"
+            line="50"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of junit:junit than 4.12 is available: 4.13.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    testImplementation &apos;junit:junit:4.12&apos;"
+        errorLine2="                       ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\build.gradle"
+            line="53"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.2 is available: 1.1.3"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    androidTestImplementation &apos;androidx.test.ext:junit:1.1.2&apos;"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\build.gradle"
+            line="54"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.3.0 is available: 3.4.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    androidTestImplementation &apos;androidx.test.espresso:espresso-core:3.3.0&apos;"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\build.gradle"
+            line="55"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="UsingOnClickInXml"
+        severity="Warning"
+        message="Use databinding or explicit wiring of click listener in code"
+        category="Correctness"
+        priority="1"
+        summary="Using `android:onClick` on older version of the platform is broken"
+        explanation="Old versions of the platform do not properly support resolving `android:onClick`"
+        errorLine1="            android:onClick=&quot;pipMe&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\res\layout\activity_main.xml"
+            line="85"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="IntentFilterExportedReceiver"
+        severity="Warning"
+        message="When using intent filters, please specify `android:exported` as well"
+        category="Security"
+        priority="5"
+        summary="Unspecified `android:exported` in manifest"
+        explanation="Apps targeting Android 12 and higher are required to specify an explicit value for `android:exported` when the corresponding component has an intent filter defined. Otherwise, installation will fail.&#xA;&#xA;Previously, `android:exported` for components without any intent filters present used to default to `false`, and when intent filters were present, the default was `true`. Defaults which change value based on other values are confusing and lead to apps accidentally exporting components as a side-effect of adding intent filters. This is a security risk, and we have made this change to avoid introducing accidental vulnerabilities.&#xA;&#xA;While the default without intent filters remains unchanged, it is now required to explicitly specify a value when intent filters are present. Any app failing to meet this requirement will fail to install on any Android version after Android 11.&#xA;&#xA;We recommend setting `android:exported` to false (even on previous versions of Android prior to this requirement) unless you have a good reason to export a particular component."
+        errorLine1="        &lt;activity android:name=&quot;.MainActivity&quot;"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml"
+            line="31"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="AllowBackup"
+        severity="Warning"
+        message="On SDK version 23 and up, your app data will be automatically backed up and restored on app install. Consider adding the attribute `android:fullBackupContent` to specify an `@xml` resource which configures which files to backup, or just set `android:fullBackupOnly=true`. More info: https://developer.android.com/guide/topics/data/autobackup"
+        category="Security"
+        priority="3"
+        summary="AllowBackup/FullBackupContent Problems"
+        explanation="The `allowBackup` attribute determines if an application&apos;s data can be backed up and restored. It is documented at https://developer.android.com/reference/android/R.attr.html#allowBackup&#xA;&#xA;By default, this flag is set to `true` which means application data can be backed up and restored by the OS. Setting `allowBackup=&quot;false&quot;` opts the application out of being backed up and so users can&apos;t restore data related to it when they go through the device setup wizard.&#xA;&#xA;Allowing backups may have security consequences for an application. Currently `adb backup` allows users who have enabled USB debugging to copy application data off of the device. Once backed up, all application data can be read by the user. `adb restore` allows creation of application data from a source specified by the user. Following a restore, applications should not assume that the data, file permissions, and directory permissions were created by the application itself.&#xA;&#xA;To fix this warning, decide whether your application should support backup, and explicitly set `android:allowBackup=(true|false)&quot;`.&#xA;&#xA;If not set to false, and if targeting API 23 or later, lint will also warn that you should set `android:fullBackupContent` or `android:fullBackupOnly` to configure auto backup."
+        url="https://developer.android.com/guide/topics/data/autobackup"
+        urls="https://developer.android.com/guide/topics/data/autobackup,https://developer.android.com/reference/android/R.attr.html#allowBackup"
+        errorLine1="        android:allowBackup=&quot;true&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml"
+            line="25"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `#353131` with a theme that also paints a background (inferred theme is `@style/AppTheme`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;#353131&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\res\layout\activity_main.xml"
+            line="23"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.test_iframe` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests=true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests=true."
+        errorLine1="    &lt;string name=&quot;test_iframe&quot;>Test IFrame&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\res\values\strings.xml"
+            line="18"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Lets Make me pip!&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Lets Make me pip!&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\res\layout\activity_main.xml"
+            line="82"
+            column="13"/>
+    </issue>
+
+</issues>

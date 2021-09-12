@@ -1,0 +1,4 @@
+#Tue Sep 07 17:50:32 BDT 2021
+base.0=E\:\\My Projects and Source Code\\Android Library Project\\IFramePlayerAndroidAPI\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

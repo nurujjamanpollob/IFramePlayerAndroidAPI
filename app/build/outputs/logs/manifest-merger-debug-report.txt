@@ -1,0 +1,170 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:17:1-43:12
+INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:17:1-43:12
+INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:17:1-43:12
+INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:17:1-43:12
+MERGED from [:IframePlayer] E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\IframePlayer\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:1-27:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\6765fa7a3332d8ad0c8e798e5f271976\transformed\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\100c3c01912a61102a44e59423d80987\transformed\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\5d0b0b075e2379ab0c0c7e2a9f7a0eb2\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\de31864e8f46ff2fd1f5728e68528ae8\transformed\jetified-activity-1.2.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\b034b53ea68ab052ef37d0a081a9df6a\transformed\jetified-appcompat-resources-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\cfb01f4ec6f2f1616a4876e69376704e\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\5872b964a9678b8c0cf9281c5910e65c\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\da6641739f85d96d8b969d6e2c3b371a\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\1ee1335e0c8a63568acb6e53174a8e22\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\793d0d5f907af7c64433a94e2b6c792c\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\e121c2ac9e276a7d82ba658f664e04d4\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.5.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\50da04979773d50789a3ca9259dbd2aa\transformed\core-1.5.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\457815c45dc5a8e15a49ecd290307915\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\b4202a8f2a8b3e6c35cee5d7536aa5b7\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\70be89393b0831b08688d32c64538c55\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\7fe490f30f73c950cf030025dc187833\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\92eeeaf7941bf761dc9b950408c3d737\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\2df04964d1bf92a0886f2b075edb435b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\7d74ec8aa2cd9af9e63cee2ded9e9ab8\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\9bb6050bc2241550c3b4fd2b2ce03e53\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\6551c7679815d20addbcad56a893f62d\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\4168d8ef20e89ac6764395c0e23e98a0\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\82b94304190b58610d5b1c41496300af\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\26389b90ec0dc2a6d27995b538144a58\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:17:1-43:12
+INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:17:1-43:12
+INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:17:1-43:12
+	package
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:19:5-58
+		INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+		INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:17:1-43:12
+		INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:18:5-51
+	android:versionCode
+		INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:17:1-43:12
+		INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:17:11-69
+uses-permission#android.permission.INTERNET
+ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:21:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:22:22-78
+application
+ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:24:5-41:19
+MERGED from [:IframePlayer] E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\IframePlayer\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:5-25:36
+MERGED from [:IframePlayer] E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\IframePlayer\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:5-25:36
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\6765fa7a3332d8ad0c8e798e5f271976\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\6765fa7a3332d8ad0c8e798e5f271976\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.5.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\50da04979773d50789a3ca9259dbd2aa\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\50da04979773d50789a3ca9259dbd2aa\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\2df04964d1bf92a0886f2b075edb435b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\2df04964d1bf92a0886f2b075edb435b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.5.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\50da04979773d50789a3ca9259dbd2aa\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:29:9-35
+	android:label
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:27:9-41
+	android:hardwareAccelerated
+		ADDED from [:IframePlayer] E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\IframePlayer\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:9-43
+	android:roundIcon
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:28:9-54
+	android:largeHeap
+		ADDED from [:IframePlayer] E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\IframePlayer\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-33
+	android:icon
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:26:9-43
+	android:allowBackup
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:25:9-35
+	android:theme
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:30:9-40
+activity#dev.nurujjamanpollob.iframeplayerandroidapi.MainActivity
+ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:31:9-40:20
+	android:supportsPictureInPicture
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:32:13-52
+	android:configChanges
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:33:13-96
+	tools:targetApi
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:34:13-32
+	android:name
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:31:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:35:13-39:29
+action#android.intent.action.MAIN
+ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:36:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:38:17-77
+	android:name
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml:38:27-74
+uses-sdk
+INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+MERGED from [:IframePlayer] E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\IframePlayer\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:5-21:41
+MERGED from [:IframePlayer] E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\IframePlayer\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\6765fa7a3332d8ad0c8e798e5f271976\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\6765fa7a3332d8ad0c8e798e5f271976\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\100c3c01912a61102a44e59423d80987\transformed\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\100c3c01912a61102a44e59423d80987\transformed\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\5d0b0b075e2379ab0c0c7e2a9f7a0eb2\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\5d0b0b075e2379ab0c0c7e2a9f7a0eb2\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\de31864e8f46ff2fd1f5728e68528ae8\transformed\jetified-activity-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\de31864e8f46ff2fd1f5728e68528ae8\transformed\jetified-activity-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\b034b53ea68ab052ef37d0a081a9df6a\transformed\jetified-appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\b034b53ea68ab052ef37d0a081a9df6a\transformed\jetified-appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\cfb01f4ec6f2f1616a4876e69376704e\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\cfb01f4ec6f2f1616a4876e69376704e\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\5872b964a9678b8c0cf9281c5910e65c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\5872b964a9678b8c0cf9281c5910e65c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\da6641739f85d96d8b969d6e2c3b371a\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\da6641739f85d96d8b969d6e2c3b371a\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\1ee1335e0c8a63568acb6e53174a8e22\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\1ee1335e0c8a63568acb6e53174a8e22\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\793d0d5f907af7c64433a94e2b6c792c\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\793d0d5f907af7c64433a94e2b6c792c\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\e121c2ac9e276a7d82ba658f664e04d4\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\e121c2ac9e276a7d82ba658f664e04d4\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.5.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\50da04979773d50789a3ca9259dbd2aa\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\50da04979773d50789a3ca9259dbd2aa\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\457815c45dc5a8e15a49ecd290307915\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\457815c45dc5a8e15a49ecd290307915\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\b4202a8f2a8b3e6c35cee5d7536aa5b7\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\b4202a8f2a8b3e6c35cee5d7536aa5b7\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\70be89393b0831b08688d32c64538c55\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\70be89393b0831b08688d32c64538c55\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\7fe490f30f73c950cf030025dc187833\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\7fe490f30f73c950cf030025dc187833\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\92eeeaf7941bf761dc9b950408c3d737\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\92eeeaf7941bf761dc9b950408c3d737\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\2df04964d1bf92a0886f2b075edb435b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\2df04964d1bf92a0886f2b075edb435b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\7d74ec8aa2cd9af9e63cee2ded9e9ab8\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\7d74ec8aa2cd9af9e63cee2ded9e9ab8\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\9bb6050bc2241550c3b4fd2b2ce03e53\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\9bb6050bc2241550c3b4fd2b2ce03e53\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\6551c7679815d20addbcad56a893f62d\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\6551c7679815d20addbcad56a893f62d\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\4168d8ef20e89ac6764395c0e23e98a0\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\4168d8ef20e89ac6764395c0e23e98a0\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\82b94304190b58610d5b1c41496300af\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\82b94304190b58610d5b1c41496300af\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\26389b90ec0dc2a6d27995b538144a58\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Nurujjaman Pollob\.gradle\caches\transforms-3\26389b90ec0dc2a6d27995b538144a58\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+		INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+		ADDED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml
+		INJECTED from E:\My Projects and Source Code\Android Library Project\IFramePlayerAndroidAPI\app\src\main\AndroidManifest.xml

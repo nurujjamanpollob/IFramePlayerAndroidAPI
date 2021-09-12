@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.0.0" type="conditional_incidents">
+
+    <incident
+        id="ScopedStorage"
+        severity="warning"
+        message="">
+        <location
+            file="$APP/src/main/AndroidManifest.xml"
+            line="22"
+            column="36"
+            startOffset="1059"
+            endLine="22"
+            endColumn="77"
+            endOffset="1100"/>
+        <map>
+            <entry
+                name="maxSdk"
+                int="2147483647"/>
+        </map>
+    </incident>
+
+    <incident
+        id="IntentFilterExportedReceiver"
+        severity="warning"
+        message="When using intent filters, please specify `android:exported` as well">
+        <fix-attribute
+            description="Set exported"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="exported"
+            value="TODO"
+            dot="4"
+            mark="0"/>
+        <location
+            file="$APP/src/main/AndroidManifest.xml"
+            line="31"
+            column="10"
+            startOffset="1390"
+            endLine="31"
+            endColumn="18"
+            endOffset="1398"/>
+    </incident>
+
+</incidents>

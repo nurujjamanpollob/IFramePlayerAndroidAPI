@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.0.0" type="incidents">
+
+    <incident
+        id="LintError"
+        severity="error"
+        message="The lint detector&#xA;    `androidx.appcompat.view.OnClickXmlDetector`&#xA;called `context.getMainProject()` during module analysis.&#xA;&#xA;This does not work correctly when running in AGP (7.0.0).&#xA;&#xA;In particular, there may be false positives or false negatives because&#xA;the lint check may be using the minSdkVersion or manifest information&#xA;from the library instead of any consuming app module.&#xA;&#xA;Contact the vendor of the lint issue to get it fixed/updated (if&#xA;known, listed below), and in the meantime you can try to work around&#xA;this by disabling the following issues:&#xA;&#xA;&quot;UsingOnClickInXml&quot;&#xA;&#xA;Issue Vendors:&#xA;Vendor: Android Open Source Project (appcompat-1.3.1)&#xA;Identifier: appcompat-1.3.1&#xA;Feedback: https://issuetracker.google.com/issues/new?component=192731&#xA;&#xA;Call stack: Context.getMainProject(Context.kt:117)←OnClickXmlDetector.visitAttribute(OnClickXmlDetector.kt:51)←ResourceVisitor.visitElement(ResourceVisitor.java:161)←ResourceVisitor.visitElement(ResourceVisitor.java:177)←ResourceVisitor.visitElement(ResourceVisitor.java:177)←ResourceVisitor.visitFile(ResourceVisitor.java:125)←LintDriver$checkResourceFolder$1.run(LintDriver.kt:2219)←LintClient.runReadAction(LintClient.kt:1780)←LintDriver$LintClientWrapper.runReadAction(LintDriver.kt:2634)←LintDriver.checkResourceFolder(LintDriver.kt:2214)←LintDriver.checkResFolder(LintDriver.kt:2167)←LintDriver.runFileDetectors(LintDriver.kt:1362)←LintDriver.checkProject(LintDriver.kt:1151)←LintDriver.checkProjectRoot(LintDriver.kt:628)←LintDriver.access$checkProjectRoot(LintDriver.kt:153)←LintDriver$analyzeOnly$1.invoke(LintDriver.kt:442)←LintDriver$analyzeOnly$1.invoke(LintDriver.kt:435)←LintDriver.doAnalyze(LintDriver.kt:502)←LintDriver.analyzeOnly(LintDriver.kt:434)←LintCliClient$analyzeOnly$1.invoke(LintCliClient.kt:241)">
+        <location
+            file="$APP/src/main/res/layout/activity_main.xml"/>
+    </incident>
+
+    <incident
+        id="UsingOnClickInXml"
+        severity="warning"
+        message="Use databinding or explicit wiring of click listener in code">
+        <location
+            file="$APP/src/main/res/layout/activity_main.xml"
+            line="85"
+            column="13"
+            startOffset="3347"
+            endLine="85"
+            endColumn="36"
+            endOffset="3370"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Lets Make me pip!&quot;, should use `@string` resource">
+        <location
+            file="$APP/src/main/res/layout/activity_main.xml"
+            line="82"
+            column="13"
+            startOffset="3216"
+            endLine="82"
+            endColumn="45"
+            endOffset="3248"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 31"
+            oldString="30"
+            replacement="31"/>
+        <location
+            file="$APP/build.gradle"
+            line="26"
+            column="9"
+            startOffset="925"
+            endLine="26"
+            endColumn="28"
+            endOffset="944"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.2.0 is available: 1.3.1">
+        <fix-replace
+            description="Change to 1.3.1"
+            family="Update versions"
+            oldString="1.2.0"
+            replacement="1.3.1"/>
+        <location
+            file="$APP/build.gradle"
+            line="49"
+            column="20"
+            startOffset="1561"
+            endLine="49"
+            endColumn="56"
+            endOffset="1597"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.0.4 is available: 2.1.0">
+        <fix-replace
+            description="Change to 2.1.0"
+            family="Update versions"
+            oldString="2.0.4"
+            replacement="2.1.0"/>
+        <location
+            file="$APP/build.gradle"
+            line="50"
+            column="20"
+            startOffset="1618"
+            endLine="50"
+            endColumn="70"
+            endOffset="1668"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of junit:junit than 4.12 is available: 4.13.1">
+        <fix-replace
+            description="Change to 4.13.1"
+            family="Update versions"
+            oldString="4.12"
+            replacement="4.13.1"/>
+        <location
+            file="$APP/build.gradle"
+            line="53"
+            column="24"
+            startOffset="1701"
+            endLine="53"
+            endColumn="42"
+            endOffset="1719"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.2 is available: 1.1.3">
+        <fix-replace
+            description="Change to 1.1.3"
+            family="Update versions"
+            oldString="1.1.2"
+            replacement="1.1.3"/>
+        <location
+            file="$APP/build.gradle"
+            line="54"
+            column="31"
+            startOffset="1751"
+            endLine="54"
+            endColumn="62"
+            endOffset="1782"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.3.0 is available: 3.4.0">
+        <fix-replace
+            description="Change to 3.4.0"
+            family="Update versions"
+            oldString="3.3.0"
+            replacement="3.4.0"/>
+        <location
+            file="$APP/build.gradle"
+            line="55"
+            column="31"
+            startOffset="1814"
+            endLine="55"
+            endColumn="75"
+            endOffset="1858"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `#353131` with a theme that also paints a background (inferred theme is `@style/AppTheme`)">
+        <location
+            file="$APP/src/main/res/layout/activity_main.xml"
+            line="23"
+            column="5"
+            startOffset="1012"
+            endLine="23"
+            endColumn="33"
+            endOffset="1040"/>
+    </incident>
+
+</incidents>
