@@ -18,12 +18,4 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/iframe_main_pip_buttion"
-        android:src="@drawable/ic_baseline_picture_in_picture_24"
-        tools:ignore="ContentDescription" />
-
 </RelativeLayout>
